@@ -12,7 +12,7 @@ from operators.datacoves.dbt import DatacovesDbtOperator
     },
     description='A DAG to run dbt for the Jaffle Shop project',
     schedule_interval='0 7 * * *',
-    tags=['version_3'],
+    tags=['version_4'],
     catchup=False,
 )
 def yaml_dbt_dag():

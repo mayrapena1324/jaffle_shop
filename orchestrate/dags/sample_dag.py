@@ -12,13 +12,13 @@ from operators.datacoves.dbt import DatacovesDbtOperator
     },
     description='A DAG to run dbt for the Jaffle Shop project',
     schedule_interval='0 7 * * *',
-    tags=['version_4'],
+    tags=['version_5'],
     catchup=False,
 )
 def yaml_dbt_dag():
     run_dbt = DatacovesDbtOperator(
         task_id='run_dbt',
-        bash_command='dbt build'
+        bash_command='dbt source freshness'
     )
 
 dag = yaml_dbt_dag()

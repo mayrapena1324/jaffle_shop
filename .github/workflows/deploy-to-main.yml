@@ -9,7 +9,6 @@ on:  # yamllint disable-line rule:truthy
     paths:
       - .github/workflows/*
       - automate/*
-      - transform/*
       - transform/**/*
 
   # Allows you to run this workflow manually from the Actions tab

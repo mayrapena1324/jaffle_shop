@@ -112,12 +112,12 @@ jobs:
     #   - name: Bump dbt project and git project version
     #     run: "../automate/dbt/bump_dbt_project.sh"
 
-    #   - name: Push version changes
-    #     uses: ad-m/github-push-action@v0.6.0
-    #     with:
-    #       github_token: ${{ secrets.GITHUB_TOKEN }}
-    #       branch: ${{ github.ref_name }}
-    #       tags: true
+      - name: Push version changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref_name }}
+          tags: true
 
     #   - name: Drop staging db on Failure
     #     if: always() && (steps.run-blue-green.outcome == 'failure')

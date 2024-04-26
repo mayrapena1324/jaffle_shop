@@ -16,7 +16,7 @@ jobs:
     name: Pull Request dbt Tests
     runs-on: ubuntu-latest
 
-    container: datacoves/ci-basic-dbt-snowflake:2.2
+    container: datacoves/ci-basic-dbt-snowflake:2
 
     defaults:
       run:

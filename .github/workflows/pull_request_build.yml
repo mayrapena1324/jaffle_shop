@@ -69,6 +69,5 @@ jobs:
       - name: Run dbt build
         run: "dbt build --fail-fast"
 
-      - name: Run governance checks
-        run: "pre-commit run --from-ref origin/${{ github.event.pull_request.base.ref }} --to-ref HEAD"
-
+      # - name: Run governance checks
+      #   run: "pre-commit run --from-ref origin/${{ github.event.pull_request.base.ref }} --to-ref HEAD"

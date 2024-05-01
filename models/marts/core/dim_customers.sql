@@ -1,10 +1,8 @@
 with customers as (
     select * from {{ ref('stg_customers')}}
-    limit 100
 ),
 orders as (
     select * from {{ ref('fct_orders')}}
-    limit 100
 ),
 customer_orders as (
     select

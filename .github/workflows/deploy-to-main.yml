@@ -46,7 +46,7 @@ jobs:
       ##### Snowflake #####
       DATACOVES__MAIN__ACCOUNT:   ${{ vars.DB_ACCOUNT }}
 
-      DATACOVES__PROD__DATABASE:  ${{ vars.PROD_DATABASE }}
+      DATACOVES__MAIN__DATABASE:  ${{ vars.PROD_DATABASE }}
       DATACOVES__MAIN__SCHEMA:    ${{ vars.DB_SCHEMA }}
 
       DATACOVES__MAIN__ROLE:      ${{ vars.DB_ROLE }}
